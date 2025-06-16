@@ -1,0 +1,49 @@
+{
+  "name": "express-file-structure",
+  "version": "1.0.0",
+  "description": "Modular File Structure for express js",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishnuprakashdev/express.git"
+  },
+  "keywords": [
+    "file",
+    "structure",
+    "express",
+    "js",
+    "microservice"
+  ],
+  "author": "vishnuprakashdev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vishnuprakashdev/express/issues"
+  },
+  "homepage": "https://github.com/vishnuprakashdev/express#readme",
+  "dependencies": {
+    "compression": "^1.8.0",
+    "connect-mongo": "^5.1.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "express-session": "^1.18.1",
+    "helmet": "^8.1.0",
+    "morgan": "^1.10.0",
+    "multer": "^2.0.1",
+    "mysql2": "^3.14.1",
+    "nod": "^0.2.0",
+    "node-fetch": "^3.3.2",
+    "sequelize": "^6.37.7",
+    "zod": "^3.25.65"
+  },
+  "devDependencies": {
+    "dotenv": "^16.5.0",
+    "nodemon": "^3.1.10"
+  }
+}
