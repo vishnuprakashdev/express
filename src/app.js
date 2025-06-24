@@ -4,7 +4,7 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 import rateLimit from 'express-rate-limit';
 
-import { responseMiddleware } from './middleware/index.js';
+import { responseMiddleware, errorHandler } from './middleware/index.js';
 
 const app = express();
 
@@ -80,5 +80,6 @@ app.use((err, req, res, _next) => {
     ...(process.env.NODE_ENV === 'development' && { stack: err.stack }),
   });
 });
+app.use(errorHandler);
 
 export default app;
